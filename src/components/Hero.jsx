@@ -2,7 +2,7 @@ import React from 'react'
 
 
 
-const Hero = ({title, subtitle}) => {
+const Hero = ({title = "The Title", subtitle = "The Subtitle"}) => {
   return (
  
     <section className="bg-indigo-700 py-20 mb-4">
