@@ -1,13 +1,13 @@
 import React from 'react'
 import jobs from '../jobs.json'
 import JobListing from './JobListing'
+import { useState } from 'react'
 
 const JobListings = () => {
+  const recentJobs = jobs.slice(0, 3);
+  
 
-    const recentJobs = jobs.slice(0, 3);
-
-
-
+   
 
   return (
     <section className="bg-blue-50 px-4 py-10">
