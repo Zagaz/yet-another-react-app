@@ -12,7 +12,7 @@ const App = () => {
 
     
 
-
+{/* Two cards  */}
     <section className="py-4">
       <div className="container-xl lg:container m-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 rounded-lg">
@@ -44,7 +44,7 @@ const App = () => {
       </div>
     </section>
 
- 
+ {/* Browsr Jobs */}
     <section className="bg-blue-50 px-4 py-10">
       <div className="container-xl lg:container m-auto">
         <h2 className="text-3xl font-bold text-indigo-500 mb-6 text-center">
@@ -144,7 +144,7 @@ const App = () => {
         </div>
       </div>
     </section>
-
+    {/* View all jobs*/}
     <section className="m-auto max-w-lg my-10 px-6">
       <a
         href="jobs.html"
