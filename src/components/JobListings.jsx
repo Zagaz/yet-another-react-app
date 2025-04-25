@@ -16,7 +16,7 @@ const JobListings = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Job Cards */}
         {jobs.map((job) => (
-        <JobListing job = {job} />
+        <JobListing  key={`job-${job.id}`}    job = {job} />
         ))}
       
 
