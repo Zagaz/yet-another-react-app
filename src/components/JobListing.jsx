@@ -17,9 +17,8 @@ const JobListing = ({ job }) => {
     return (
         <div className="bg-white rounded-xl shadow-md relative">
             <div className="p-4">
-                <div className="mb-6 flex">
-                        <TfiTime />
-                    <div className="text-gray-600 my-2 flex">
+                <div className="mb-6 ">
+                    <div className="text-gray-600 my-2 ">
                         {job.type} </div>
                     <h3 className="text-xl font-bold">{job.title}</h3>
                 </div>
@@ -32,17 +31,17 @@ const JobListing = ({ job }) => {
                 >
                     {showFullDescription ?
                         <div className="flex inline">
-                            <p>Less</p> 
-                         < BsChevronUp /> 
-                         </div>
+                            <p>Less</p>
+                            < BsChevronUp />
+                        </div>
 
                         :
                         <div className="flex inline">
-                            <p>More</p> 
+                            <p>More</p>
 
-                            < BsChevronDown /> 
+                            < BsChevronDown />
                         </div>
-                        }
+                    }
                 </button>
 
                 <h3 className="text-indigo-500 mb-2">{job.salary} / Year</h3>
