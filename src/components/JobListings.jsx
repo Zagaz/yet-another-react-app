@@ -39,9 +39,13 @@ const JobListings = ({ isHome = false }) => {
         </h2>
 
         <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
+          { loading ? (<h1>Loading...</h1>) :
+          <>
             {jobs.map((job) => (
               <JobListing key={job.id} job={job} />
             ))}
+          </>
+           }
           </div>
       </div>
     </section>
