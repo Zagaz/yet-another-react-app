@@ -2,7 +2,7 @@ import React from 'react'
 import Spinner from '../components/Spinner';
 import { useParams , useLoaderData } from 'react-router-dom'
 import {Link} from 'react-router-dom'
-
+import { FaArrowLeft, FaMapMarker} from 'react-icons/fa';
 
 
 const JobPage = () => {
@@ -18,7 +18,9 @@ const JobPage = () => {
           to ="/jobs"
           className="text-indigo-500 hover:text-indigo-600 flex items-center"
         >
-          <i className="fas fa-arrow-left mr-2"></i> Back to Job Listings
+         
+          
+          Back to Job Listings
         </Link>
       </div>
     </section>
@@ -37,10 +39,11 @@ const JobPage = () => {
               <div
                 className="text-gray-500 mb-4 flex align-middle justify-center md:justify-start"
               >
-                <i
-                  className="fa-solid fa-location-dot text-lg text-orange-700 mr-2"
-                ></i>
-                <p className="text-orange-700">Boston, MA</p>
+                 <FaMapMarker
+                 className='text-orange-700 mr-1'
+                  />
+
+                <p className="text-orange-700">{job.location}</p>
               </div>
             </div>
 
